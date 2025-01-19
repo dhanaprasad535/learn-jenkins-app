@@ -25,6 +25,9 @@ pipeline {
                     npm --version
                     ls -la
                     touch yes-docker.txt
+                    npm ci
+                    npm run build
+                    ls -la
                 '''
             }
         }
